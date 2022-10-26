@@ -2,6 +2,12 @@
 Test application numbersapi.com
 Test task for the position of an iOS Developer
 
+ATTENTION!
+BEFORE running this project you need reinstall packeges of RealM DB, just do in XCode:
+File -> Packages -> Reset Package Caches
+or
+File -> Packages -> Update To Latest
+
 Main screen
 It should be divided into two parts, the upper part is a field for entering a number, the button "Get fact" and the button "Get fact about random number", the lower part - display the history of user requests, each history element should show the number the user searched for and fact preview (everything that fits in one line), clicking on the element should open the 2nd screen.
 
