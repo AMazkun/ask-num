@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.prepare(for:sender:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "responses[responseTable.indexPathForSelectedRow!.row]">
+            </PersistentString>
+            <PersistentString
+               value = "responses">
+            </PersistentString>
+            <PersistentString
+               value = "responseTable.indexPathForSelectedRow!.row">
+            </PersistentString>
+            <PersistentString
+               value = "selectedResponse!">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
