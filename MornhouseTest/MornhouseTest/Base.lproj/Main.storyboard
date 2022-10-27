@@ -17,12 +17,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwS-9O-JPc">
-                                <rect key="frame" x="20.000000000000014" y="100" width="234.33333333333337" height="34"/>
+                                <rect key="frame" x="20.000000000000014" y="100" width="249.33333333333337" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtz-71-LlZ">
-                                <rect key="frame" x="274.33333333333331" y="99.666666666666671" width="95.666666666666686" height="35.000000000000014"/>
+                                <rect key="frame" x="284.33333333333331" y="99.666666666666671" width="95.666666666666686" height="35.000000000000014"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Ask them"/>
                                 <connections>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BZ-XD-C4H">
-                                <rect key="frame" x="20" y="143" width="350" height="35"/>
+                                <rect key="frame" x="20" y="143" width="360" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Don't care about exect number"/>
                                 <connections>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bo-Os-v9M">
-                                <rect key="frame" x="16" y="186" width="358" height="54"/>
+                                <rect key="frame" x="20" y="186" width="354" height="54"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="uTB-MQ-tvF"/>
                                 </constraints>
@@ -53,20 +53,20 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LogCell" id="TYx-VT-cp8" customClass="LogCell" customModule="MornhouseTest" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="358" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TYx-VT-cp8" translatesAutoresizingMaskIntoConstraints="NO" id="kKW-nh-hgg">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TYx-VT-cp8" translatesAutoresizingMaskIntoConstraints="NO" id="kKW-nh-hgg">
                                             <rect key="frame" x="0.0" y="0.0" width="358" height="42.666667938232422"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGX-qV-v8M">
                                                     <rect key="frame" x="2" y="10.999999999999998" width="50" height="20.333333333333329"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="IzV-NS-Wop"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="IzV-NS-Wop"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lP-ga-1BV">
-                                                    <rect key="frame" x="68" y="1" width="200" height="40.333333333333336"/>
+                                                    <rect key="frame" x="62" y="1" width="200" height="40.333333333333336"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="qaf-2v-d3v" userLabel="height ≥ 35"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="tED-VX-BIT"/>
@@ -83,10 +83,14 @@
                                                 <constraint firstItem="9lP-ga-1BV" firstAttribute="top" secondItem="kKW-nh-hgg" secondAttribute="top" constant="1" id="c3R-WP-xJ4"/>
                                                 <constraint firstAttribute="trailing" secondItem="9lP-ga-1BV" secondAttribute="trailing" constant="2" id="nWK-Vs-xoD"/>
                                                 <constraint firstItem="AGX-qV-v8M" firstAttribute="top" secondItem="kKW-nh-hgg" secondAttribute="top" constant="11" id="qag-LC-zna"/>
-                                                <constraint firstItem="9lP-ga-1BV" firstAttribute="leading" secondItem="AGX-qV-v8M" secondAttribute="trailing" constant="16" id="vzn-ET-MwA"/>
+                                                <constraint firstItem="9lP-ga-1BV" firstAttribute="leading" secondItem="AGX-qV-v8M" secondAttribute="trailing" constant="10" id="vzn-ET-MwA"/>
                                                 <constraint firstItem="9lP-ga-1BV" firstAttribute="centerY" secondItem="kKW-nh-hgg" secondAttribute="centerY" id="zpi-NG-Amk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="kKW-nh-hgg" firstAttribute="top" secondItem="TYx-VT-cp8" secondAttribute="top" id="8ll-bJ-Vmt"/>
+                                            <constraint firstItem="kKW-nh-hgg" firstAttribute="leading" secondItem="TYx-VT-cp8" secondAttribute="leading" id="ViL-YY-hOD"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="answerLabel" destination="9lP-ga-1BV" id="wVe-nl-F73"/>
                                             <outlet property="numLabel" destination="AGX-qV-v8M" id="bfN-h5-DtU"/>
@@ -101,18 +105,18 @@
                             <constraint firstItem="5BZ-XD-C4H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0on-us-WlU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cs9-Av-Ywa" secondAttribute="trailing" constant="16" id="7HB-Lx-cIN"/>
                             <constraint firstItem="hwS-9O-JPc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="9dc-DY-Qed"/>
-                            <constraint firstItem="1bo-Os-v9M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ChT-XU-l1V"/>
+                            <constraint firstItem="1bo-Os-v9M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ChT-XU-l1V"/>
                             <constraint firstItem="hwS-9O-JPc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ELZ-2E-55l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cs9-Av-Ywa" secondAttribute="bottom" id="Ig6-Gg-WnI"/>
                             <constraint firstItem="5BZ-XD-C4H" firstAttribute="top" secondItem="hwS-9O-JPc" secondAttribute="bottom" constant="9" id="QhZ-Xk-dcA"/>
                             <constraint firstItem="cs9-Av-Ywa" firstAttribute="top" secondItem="1bo-Os-v9M" secondAttribute="bottom" constant="-14" id="Udh-zM-HZ5"/>
                             <constraint firstItem="Vtz-71-LlZ" firstAttribute="centerY" secondItem="hwS-9O-JPc" secondAttribute="centerY" id="Ve0-2L-nF4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1bo-Os-v9M" secondAttribute="trailing" constant="16" id="Vee-VT-3WS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vtz-71-LlZ" secondAttribute="trailing" constant="20" id="bfN-1a-Q9C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vtz-71-LlZ" secondAttribute="trailing" constant="10" id="bfN-1a-Q9C"/>
                             <constraint firstItem="cs9-Av-Ywa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dSz-P1-ehw"/>
                             <constraint firstItem="1bo-Os-v9M" firstAttribute="top" secondItem="5BZ-XD-C4H" secondAttribute="bottom" constant="8" symbolic="YES" id="dYT-oB-BEr"/>
-                            <constraint firstItem="Vtz-71-LlZ" firstAttribute="leading" secondItem="hwS-9O-JPc" secondAttribute="trailing" constant="20" id="hMl-33-9m3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5BZ-XD-C4H" secondAttribute="trailing" constant="20" id="xAB-tT-4gz"/>
+                            <constraint firstItem="Vtz-71-LlZ" firstAttribute="leading" secondItem="hwS-9O-JPc" secondAttribute="trailing" constant="15" id="hMl-33-9m3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5BZ-XD-C4H" secondAttribute="trailing" constant="10" id="xAB-tT-4gz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Ask them about number" id="Ng5-FW-GGI"/>
@@ -127,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="18"/>
+            <point key="canvasLocation" x="677" y="4"/>
         </scene>
         <!--Detail View-->
         <scene sceneID="JQd-03-92Q">
@@ -173,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rz-di-22v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476.9230769230769" y="30.568720379146917"/>
+            <point key="canvasLocation" x="1428" y="4"/>
         </scene>
         <!--Ask them about number-->
         <scene sceneID="Gco-rY-fSL">

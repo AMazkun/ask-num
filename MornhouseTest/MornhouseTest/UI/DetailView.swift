@@ -1,8 +1,8 @@
 //
 //  DetailView.swift
 //  MornhouseTest
-//
-//  Created by admin on 26.10.2022.
+//  2nd screen
+//  Created by Anatoly on 26.10.2022.
 //
 
 import UIKit
@@ -20,6 +20,5 @@ class DetailView: UIViewController {
             numLbl.text = selectedResponse!.num
             answerText.text = selectedResponse!.answer
         }
-
     }
-    }
+}

@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
 //  MornhouseTest
-//
-//  Created by admin on 25.10.2022.
+//  Main screen
+//  Created by Anatoly on 25.10.2022.
 //
 
 import UIKit
@@ -11,7 +11,6 @@ import RealmSwift
 class ViewController: UIViewController {
     let realm = try! Realm()
     lazy var responses: Results<Response> = { self.realm.objects(Response.self) }()
-    var selectedResponse: Response? = nil
 
     @IBOutlet weak var responseTable: UITableView!
     @IBOutlet weak var msgLabel: UILabel!
@@ -75,7 +74,7 @@ class ViewController: UIViewController {
     @IBAction func GetNumResponse(_ sender: Any) {
         guard let s = numInput.text,
               let num = Int(s.trimmingCharacters(in: [" ", "\t"])) else {
-            msgLabel.text = "Shirt entered"
+            msgLabel.text = "Shit entered"
             return
         }
         let url = URL(string: "http://numbersapi.com/\(num)")!

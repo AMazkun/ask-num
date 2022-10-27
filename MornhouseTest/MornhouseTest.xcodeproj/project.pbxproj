@@ -64,10 +64,10 @@
 			children = (
 				845020482908625B004B72E5 /* AppDelegate.swift */,
 				8450204A2908625B004B72E5 /* SceneDelegate.swift */,
+				84E53A96290878540005987A /* Realm */,
 				84E53A9E290879B00005987A /* UI */,
 				8450204E2908625B004B72E5 /* Main.storyboard */,
 				845020592908625B004B72E5 /* Info.plist */,
-				84E53A96290878540005987A /* Realm */,
 			);
 			path = MornhouseTest;
 			sourceTree = "<group>";

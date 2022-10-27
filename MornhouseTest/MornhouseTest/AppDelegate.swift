@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MornhouseTest
 //
-//  Created by admin on 25.10.2022.
+//  Created by Anatoly on 25.10.2022.
 //
 
 import UIKit
